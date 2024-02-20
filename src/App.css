@@ -1,0 +1,20 @@
+:root {
+    --cl-m: #8A508B;
+    --cl-p: #FFF;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header {
+    background-color: var(--cl-m);
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
