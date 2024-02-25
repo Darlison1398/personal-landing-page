@@ -3,7 +3,7 @@ import React from "react";
 import Photo from "./components/Photo";
 import Apresentation from "./components/Apresentation";
 import Projetos from "./components/Projetos";
-
+import Zap from "./components/Zap";
 
 function Main() {
     return (
@@ -19,6 +19,10 @@ function Main() {
 
             <div className="box-projeto">
                 <Projetos />
+            </div>
+
+            <div className="box-zap">
+                <Zap />
             </div>
         </div>
     )

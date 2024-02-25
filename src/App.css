@@ -2,6 +2,7 @@
     --cl-m: #8A508B;
     --cl-p: #FFF;
     --cl-s: #4a133f;
+    --cl-t: #fa96bc;
 }
 body {
     margin: 0;
@@ -12,6 +13,7 @@ body {
 
 .header {
     background-color: var(--cl-m);
+    bottom: 0;
 }
 
 .container-fluid{
@@ -39,7 +41,6 @@ body {
     padding: 10px;
     box-sizing: border-box;
     overflow: hidden;
-
 }
 
 .box-icons{
@@ -66,7 +67,78 @@ body {
 }
 
 
+/* foto */
+figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    min-width: 375px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 
+      0 1px 3px rgba(0, 0, 0, 0.12), 
+      0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    overflow: hidden;
+  }
+  
+  figure:hover {
+    box-shadow: 
+      0 14px 28px rgba(0, 0, 0, 0.25), 
+      0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  
 
+  figure:hover img {
+    transform: scale(1.25);
+  }
+  
+  figure:hover figcaption {
+    bottom: 0;
+  }
+
+  img {
+    height: 100%;
+    transition: 0.25s;
+  }
+  
+  figcaption {
+    position: absolute;
+    bottom: -34%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    background-color: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #222e5b;
+    line-height: 1;
+    transition: 0.25s;
+  }
+
+  
+  figcaption p {
+    font-size: 14pt;
+    line-height: 1.75;
+  }
+  
+  figcaption button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0;
+    padding: 10px 30px;
+    background-color: var(--color-2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
 /* container apresentation */
 .box-text{
     width: 600px;
@@ -100,7 +172,7 @@ body {
 .project{
     max-width: 250px;
     height: 60vh;
-    background-color: #519efd;
+    background-color: var(--cl-t);
     color: #FFF;
     padding: 15px;
     border-radius: 14px;
@@ -112,15 +184,15 @@ body {
 }
 
 .project h5 {
-    color: #222e5b;
+    color: var(--cl-s);
 }
 #btn-see{
     width: 100%;
-    background-color: #222e5b;
+    background-color:var(--cl-s);
     color: #FFF;
     height: 40px;
     border-radius: 20px;
-    border: 2px solid #222e5b;
+    border: 2px solid var(--cl-s);
     justify-self: end;
     margin-top: auto;
 }
@@ -136,20 +208,102 @@ section{
     padding: 10px;
 }
 
+
+
+/*  ZAP   **************************/
+.btn-zap{
+    height: 70px;
+    background-color: var(--cl-s);
+    color: #FFF;
+    border-radius: 20px;
+    margin-top: 1em;
+    font-size: 16pt;
+    border:none; 
+    padding: 15px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#icon-zap{
+    color: #f6c0d5;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+
+
 .footer{
     padding: 10px;
     margin-bottom: 0;
+    bottom: 0;
 }
 
 .footer p{
     font-size: 18pt;
+    color: var(--cl-p);
 }
+
+
+@media (max-width: 1000px) {
+    .box-text{
+        width: 90%;
+    }
+
+    .box-icons{
+        width: 100%;
+    }
+
+    figure img + figcaption {
+        display: block;
+        bottom: 0;
+    }
+
+    figure p{
+        font-size: 9pt;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    /* Desativar efeito hover */
+    figure:hover {
+        box-shadow: none;
+    }
+
+    figure:hover img {
+        transform: none;
+    }
+
+    figure:hover figcaption {
+        bottom: 0;
+    }
+
+
+}
+
+
+
 /*  responsividade */
 @media (max-width: 900px) {
     .box-text{
         width: 100%;
         padding: 10px;
         margin-top: 3em;
+        font-size: 12pt;
     }
 
     .box-soft{
@@ -164,5 +318,43 @@ section{
 
     .redes .redes-icon{
         font-size: 22pt;
+        color: var(--cl-p);
+    }
+
+    .container-box{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .project {
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+    }
+
+    figure img + figcaption {
+        display: block;
+        bottom: 0;
+    }
+
+    figure p{
+        font-size: 13pt;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* Desativar efeito hover */
+    figure:hover {
+        box-shadow: none;
+    }
+
+    figure:hover img {
+        transform: none;
+    }
+
+    figure:hover figcaption {
+        bottom: 0;
     }
 }

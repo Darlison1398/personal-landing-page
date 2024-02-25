@@ -1,21 +1,47 @@
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import React, { useState } from 'react';
+import ModalG from './ModalG';
+import Trajetoria from '../main/components/Trajetoria';
+
+
 function Header() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+  
+    const toggleNav = () => {
+      setIsNavOpen(!isNavOpen);
+    };
+  
+    const [showModal, setShowModal] = useState(false);
+    const handleClose = () => setShowModal(false);
+    const handleShow = () => setShowModal(true);
+
     return (
+      
         <div className="header">
-            <nav class=" container navbar navbar-expand-sm navbar-dark">
-              <div class="container-fluid">
+
+            <nav className="container navbar navbar-expand-sm navbar-dark">
+              <div className="container-fluid">
                 <div className="title">
-                  <a class="navbar-brand fs-2" href="#">Darlison Silva</a>
+                  <a className="navbar-brand fs-2" href="#">Darlison Silva</a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
+
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" onClick={toggleNav}>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                  <ul class="navbar-nav fs-4">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Projeto</a>
+
+                <div className={`collapse navbar-collapse justify-content-end ${isNavOpen ? 'show' : ''}`} id="collapsibleNavbar">
+                  <ul className="navbar-nav fs-4">
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/">Home</Link>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Jornada</a>
+                    
+                    <li className="nav-item">
+                      <a className="nav-link" href="#" onClick={handleShow}>Projeto</a>
+                      <ModalG show={showModal} handleClose={handleClose} />
+                    </li>
+
+                    <li className="nav-item">
+                      <Link className="nav-link" to="/trajetoria">Jornada</Link>
                     </li> 
                     
                   </ul>
@@ -23,8 +49,13 @@ function Header() {
               </div>
             </nav>
 
+            <Routes>
+              <Route path="/trajetoria" component={Trajetoria} />
+            </Routes>
 
         </div>
+
+      
     )
 }
 
