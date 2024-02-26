@@ -1,11 +1,11 @@
 
 function Trajetoria() {
     return (
-        <div className="container">
+        <div className="container mt-5">
 
             <div className="box-start">
                 <h2 className="text-center">Início</h2>
-                <div className="container box-cont-text">
+                <div className="container mt-1 box-cont-text">
                     <p>
                         Ingressei no mundo da programação em novembro de 2021, quando dei os 
                         primeiros passos no estudo da lógica de programação utilizando a linguagem 
@@ -19,7 +19,7 @@ function Trajetoria() {
 
             <div className="box-progress">
                 <h2 className="text-center">Em progresso...</h2>
-                <div className="box-cont-text">
+                <div className="container mt-1 box-cont-text">
                     <p>
                        Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
                         combinando minhas responsabilidades profissionais com uma busca constante por 
@@ -39,7 +39,7 @@ function Trajetoria() {
             </div>
             <div className="box-progress">
                 <h2 className="text-center">Em progresso...</h2>
-                <div className="box-cont-text">
+                <div className="container box-cont-text">
                     <p>
                        Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
                         combinando minhas responsabilidades profissionais com uma busca constante por 
@@ -59,7 +59,7 @@ function Trajetoria() {
             </div>
             <div className="box-progress">
                 <h2 className="text-center">Em progresso...</h2>
-                <div className="box-cont-text">
+                <div className="container box-cont-text">
                     <p>
                        Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
                         combinando minhas responsabilidades profissionais com uma busca constante por 

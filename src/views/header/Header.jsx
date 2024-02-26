@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import React, { useState } from 'react';
 import ModalG from './ModalG';
 import Trajetoria from '../main/components/Trajetoria';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFolder, faArrowUpWideShort  } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -22,7 +23,7 @@ function Header() {
             <nav className="container navbar navbar-expand-sm navbar-dark">
               <div className="container-fluid">
                 <div className="title">
-                  <a className="navbar-brand fs-2" href="#">Darlison Silva</a>
+                  <a className="navbar-brand fs-2" href="#">DrSilva</a>
                 </div>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" onClick={toggleNav}>
@@ -30,18 +31,40 @@ function Header() {
                 </button>
 
                 <div className={`collapse navbar-collapse justify-content-end ${isNavOpen ? 'show' : ''}`} id="collapsibleNavbar">
+                  
                   <ul className="navbar-nav fs-4">
                     <li className="nav-item">
-                      <Link className="nav-link" to="/">Home</Link>
+                      <Link className="nav-link" to="/">
+                        <div>
+                          <span className='faIcon'><FontAwesomeIcon icon={faHome} /></span>
+                        </div>
+                        <div>
+                          <span className='nav-text'>Home</span>
+                        </div> 
+                      </Link>
                     </li>
                     
                     <li className="nav-item">
-                      <a className="nav-link" href="#" onClick={handleShow}>Projeto</a>
+                      <a className="nav-link" href="#" onClick={handleShow}>
+                        <div>
+                          <span className='faIcon'><FontAwesomeIcon icon={faFolder} /></span>
+                        </div>
+                        <div>
+                          <span className='nav-text'>Projeto</span>
+                        </div>
+                      </a>
                       <ModalG show={showModal} handleClose={handleClose} />
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" to="/trajetoria">Jornada</Link>
+                      <Link className="nav-link" to="/trajetoria">
+                        <div>
+                          <span className='faIcon'><FontAwesomeIcon icon={faArrowUpWideShort} /></span>
+                        </div>
+                        <div>
+                          <span className='nav-text'>Jornada</span>
+                        </div>
+                      </Link>
                     </li> 
                     
                   </ul>

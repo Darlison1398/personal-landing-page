@@ -22,6 +22,20 @@ body {
     justify-content: space-around;
 }
 
+.nav-item .faIcon {
+    display: none;
+}
+
+.nav-link{
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.nav-link div{
+    display: inline-flex;
+}
+
 /* Main */
 .container-main{
     display: flex;
@@ -208,6 +222,11 @@ section{
     padding: 10px;
 }
 
+/*  trajetória */
+.box-progress{
+    margin-top: 4em;
+}
+
 
 
 /*  ZAP   **************************/
@@ -241,7 +260,6 @@ section{
     font-size: 20pt;
     font-weight: 600;
 }
-
 
 
 .footer{
@@ -356,5 +374,26 @@ section{
 
     figure:hover figcaption {
         bottom: 0;
+    }
+}
+
+@media (max-width: 580px){
+
+    .nav-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    
+    .nav-item .faIcon {
+        display: block;
+    }
+
+    .nav-item{
+        display: flex;
+    }
+
+    .nav-text {
+        margin-left: 20px;
     }
 }
