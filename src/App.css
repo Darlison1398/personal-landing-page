@@ -1,9 +1,18 @@
-:root {
+/*:root {
     --cl-m: #8A508B;
     --cl-p: #FFF;
     --cl-s: #4a133f;
     --cl-t: #fa96bc;
+}*/
+
+:root {
+    --cl-m: #697EF2;
+    --cl-p: #FFF;
+    --cl-s: #8518F2;
+    --cl-t: #68D7F5;
+    --cl-q: #BB35F5;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -68,7 +77,7 @@ body {
 
 .redes .redes-icon{
     font-size: 25pt;
-    color: var(--cl-s);
+    color: var(--cl-t);
 }
 
 .redes-icon {
@@ -159,6 +168,15 @@ figure {
     padding: 10px;
 }
 
+.box-text h2{
+    color:#8A508B;
+}
+
+
+.box-soft h4{
+    color: #8518F2;
+}
+
 /*  soft skills */
 .box-elements{
     display: flex;
@@ -195,6 +213,10 @@ figure {
     justify-content: space-between;
     /*transform: translateX(-400px);
     opacity: 0;*/
+    /*opacity: 0;
+    transform: translateY(-180px);*/
+    transform: translateX(-400px);
+    opacity: 0;
 }
 
 .project h5 {
@@ -225,9 +247,8 @@ section{
 /*  trajetória */
 .box-progress{
     margin-top: 4em;
+    margin-bottom: 3em;
 }
-
-
 
 /*  ZAP   **************************/
 .btn-zap{
@@ -273,6 +294,12 @@ section{
     color: var(--cl-p);
 }
 
+
+.box-icon-footer a{
+    font-size: 23pt;
+    color: var(--cl-p);
+    margin-left: 12px;
+}
 
 @media (max-width: 1000px) {
     .box-text{
@@ -327,6 +354,10 @@ section{
     .box-soft{
         margin-top: 3em;
         padding: 10px;
+    }
+
+    .box-soft h4{
+        color: #8A508B !important;
     }
 
     .box-icons{

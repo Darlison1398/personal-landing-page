@@ -1,3 +1,7 @@
+import { useLayoutEffect } from "react";
+import React from "react";
+import { gsap } from 'gsap';
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import project from '../../../assets/js/Project';
@@ -7,6 +11,28 @@ function Projetos() {
     const redirectToProject = (url) => {
         window.open(url, '_blank'); 
     };
+
+
+    
+    gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect( () => {
+        gsap.to(".project", {
+            x:0,
+            opacity: 1, 
+            scrollTrigger: {
+                trigger: ".project",
+                //markers:true,
+                start: "top 400px",
+                end: "botton 200px",
+                scrub: true,
+            }
+        })
+        
+        return () => {
+            gsap.killTweensOf(".project")
+        }
+    }, []);
+
 
     return (
         <div className="container mt-5">

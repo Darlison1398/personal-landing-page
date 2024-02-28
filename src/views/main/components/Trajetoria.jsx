@@ -38,66 +38,27 @@ function Trajetoria() {
                 </div>
             </div>
             <div className="box-progress">
-                <h2 className="text-center">Em progresso...</h2>
+                <h2 className="text-center">Objetivos</h2>
                 <div className="container box-cont-text">
                     <p>
-                       Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
-                        combinando minhas responsabilidades profissionais com uma busca constante por 
-                        conhecimento. Além dos estudos acadêmicos no curso superior, dedico-me a realizar 
-                        cursos adicionais nas horas vagas e a empreender projetos pessoais afim de melhorar
-                        minhas habilidades como profissional na área.
-
-                        Minha dedicação pelo desenvolvimento se estende tanto ao front-end quanto ao back-end. 
-                        Ao criar interfaces, busco a simplicidade, a intuição e a responsividade como pilares 
-                        essenciais. Já no desenvolvimento back-end, priorizo a construção de aplicações com 
-                        uma sólida estrutura de código. Meu objetivo é oferecer soluções compreensíveis para 
-                        outros programadores e usuários, promovendo a reutilização do código e mantendo um 
-                        padrão de limpeza.
+                       Tenho como objetivo se tornar um engenheiro de Software. Assim que terminar
+                       a graduação, pretendendo ingressar em um curso de pós-graduação na área de 
+                       Engenharia de software.
                         
                     </p>
                 </div>
             </div>
             <div className="box-progress">
-                <h2 className="text-center">Em progresso...</h2>
+                <h2 className="text-center">Interesses profissionais</h2>
                 <div className="container box-cont-text">
                     <p>
-                       Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
-                        combinando minhas responsabilidades profissionais com uma busca constante por 
-                        conhecimento. Além dos estudos acadêmicos no curso superior, dedico-me a realizar 
-                        cursos adicionais nas horas vagas e a empreender projetos pessoais afim de melhorar
-                        minhas habilidades como profissional na área.
-
-                        Minha dedicação pelo desenvolvimento se estende tanto ao front-end quanto ao back-end. 
-                        Ao criar interfaces, busco a simplicidade, a intuição e a responsividade como pilares 
-                        essenciais. Já no desenvolvimento back-end, priorizo a construção de aplicações com 
-                        uma sólida estrutura de código. Meu objetivo é oferecer soluções compreensíveis para 
-                        outros programadores e usuários, promovendo a reutilização do código e mantendo um 
-                        padrão de limpeza.
-                        
+                       Interesses profisisonais: Desenvolvimento web de modo geral, front-end, 
+                       back-end, inteligência artificial, programação orientada a objetos, banco 
+                       de dados, testes de sistemas, ux e ui design, desenvolvimento mobile,
+                       análise de sistemas, etc.
                     </p>
                 </div>
             </div>
-            <div className="box-progress">
-                <h2 className="text-center">Em progresso...</h2>
-                <div className="box-cont-text">
-                    <p>
-                       Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
-                        combinando minhas responsabilidades profissionais com uma busca constante por 
-                        conhecimento. Além dos estudos acadêmicos no curso superior, dedico-me a realizar 
-                        cursos adicionais nas horas vagas e a empreender projetos pessoais afim de melhorar
-                        minhas habilidades como profissional na área.
-
-                        Minha dedicação pelo desenvolvimento se estende tanto ao front-end quanto ao back-end. 
-                        Ao criar interfaces, busco a simplicidade, a intuição e a responsividade como pilares 
-                        essenciais. Já no desenvolvimento back-end, priorizo a construção de aplicações com 
-                        uma sólida estrutura de código. Meu objetivo é oferecer soluções compreensíveis para 
-                        outros programadores e usuários, promovendo a reutilização do código e mantendo um 
-                        padrão de limpeza.
-                        
-                    </p>
-                </div>
-            </div>
-
         </div>
     )
 }
