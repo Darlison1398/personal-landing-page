@@ -75,7 +75,7 @@ function Projetos() {
                 </div>
 
                 <div className="project">
-                    <h5>Drsilva carta-profisional</h5>
+                    <h5>Drsilva page</h5>
                     <p>
                         Clique no botão abaixo para ver o escopo desse sistema no figma
                     </p>

@@ -13,6 +13,8 @@ function SoftSkills() {
                     <div className="element">Java</div>
                     <div className="element">POO</div>
                     <div className="element">Spring Boot</div>
+                    <div className="element">Python</div>
+                    <div className="element">Php</div>
                     <div className="element">SQL</div>
                     <div className="element">MySQL</div>
                     <div className="element">PostgreSQL</div>

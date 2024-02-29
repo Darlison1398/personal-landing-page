@@ -1,3 +1,4 @@
+import Mais from "./Mais";
 
 function Trajetoria() {
     return (
@@ -59,6 +60,8 @@ function Trajetoria() {
                     </p>
                 </div>
             </div>
+
+            <Mais />
         </div>
     )
 }
