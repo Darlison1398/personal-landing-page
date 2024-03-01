@@ -5,7 +5,31 @@ import figImg from '../../../assets/icon/figma.png';
 import phpImg from '../../../assets/icon/php.png';
 import pyImg from '../../../assets/icon/pitao.png';
 
+import { useLayoutEffect } from "react";
+import { gsap } from 'gsap';
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 function Mais () {
+
+  gsap.registerPlugin(ScrollTrigger);
+  useLayoutEffect( () => {
+      gsap.to(".cards", {
+          y:0,
+          opacity: 1, 
+          scrollTrigger: {
+              trigger: ".cards",
+              //markers:true,
+              start: "top 900px",
+              end: "bottom 700px",
+              scrub: true,
+          }
+      })
+      
+      return () => {
+          gsap.killTweensOf(".cards")
+      }
+  }, []);
+
     const mt = { marginTop: '5em'};
 
     return (

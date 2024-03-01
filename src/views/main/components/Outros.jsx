@@ -1,4 +1,29 @@
+import { useLayoutEffect } from "react";
+import React from "react";
+import { gsap } from 'gsap';
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+
 function Outros() {
+
+    gsap.registerPlugin(ScrollTrigger);
+    useLayoutEffect( () => {
+        gsap.to(".ot", {
+            x:0,
+            opacity: 1, 
+            scrollTrigger: {
+                trigger: ".ot",
+                //markers:true,
+                start: "top 600px",
+                end: "bottom 350px",
+                scrub: true,
+            }
+        })
+        
+        return () => {
+            gsap.killTweensOf(".ot")
+        }
+    }, []);
+
     return (
         <div className="container mt-5 ot">
             <h3 className="text-center">Outras Stacks</h3>
