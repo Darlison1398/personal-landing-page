@@ -10,7 +10,7 @@ function Mais () {
 
     return (
         <div className="container usuals" style={mt}>
-            <h3 className="text-center">Tecnolgias que eu já trabalhei em alguns momentos.</h3>
+            <h3 className="text-center">Tecnologias que eu já trabalhei em alguns momentos.</h3>
             <ul className="cards">
               <li className="card cards__item">
                 <div className="card__frame">

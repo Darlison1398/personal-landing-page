@@ -4,6 +4,7 @@ import Photo from "./components/Photo";
 import Apresentation from "./components/Apresentation";
 import Projetos from "./components/Projetos";
 import Zap from "./components/Zap";
+import Outros from "./components/Outros";
 
 function Main() {
     return (
@@ -19,6 +20,10 @@ function Main() {
 
             <div className="box-projeto">
                 <Projetos />
+            </div>
+
+            <div>
+                <Outros />
             </div>
 
             <div className="box-zap">

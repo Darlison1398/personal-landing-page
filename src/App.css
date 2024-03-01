@@ -256,9 +256,21 @@ figure {
 }
 
 section{
-    margin-top: 2em;
     padding: 10px;
 }
+
+/*  outros */
+.ot h2 {
+    color: var(--cl-m);
+    margin-bottom: 0;
+}
+
+.col-sm-4 h3 {
+    color: var(--cl-m);
+}
+
+
+
 
 /*  trajetória */
 .box-progress{
