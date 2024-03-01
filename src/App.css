@@ -281,6 +281,7 @@ section{
     border-radius: 20px;
     margin-top: 1em;
     font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
     border:none; 
     padding: 15px;
     transform: translateY(0px);
@@ -473,6 +474,8 @@ section{
 
 .footer div h5 {
     color: var(--cl-p);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 

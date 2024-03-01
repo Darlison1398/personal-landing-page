@@ -3,6 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function ModalG({ show, handleClose }) {
+
+  const cl = {color: '#8518F2'}
+  const stb = {backgroundColor: '#8518F2', color: '#FFF'}
   return (
     <div
       className="modal show"
@@ -10,7 +13,7 @@ function ModalG({ show, handleClose }) {
     >
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title><h3>Sobre esse projeto</h3></Modal.Title>
+          <Modal.Title style={cl}><h3>Sobre esse projeto</h3></Modal.Title>
         </Modal.Header>
         
         <Modal.Body>
@@ -30,12 +33,9 @@ function ModalG({ show, handleClose }) {
         </Modal.Body>
 
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose} style={stb}>
             Fechar
           </Button>
-          {/*<Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>*/}
         </Modal.Footer>
       </Modal>
     </div>
