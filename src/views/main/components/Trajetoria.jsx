@@ -43,9 +43,11 @@ function Trajetoria() {
                 <h3 className="text-center">Objetivos</h3>
                 <div className="container box-cont-text">
                     <p>
-                       Tenho como objetivo se tornar um engenheiro de Software. Assim que terminar
-                       a graduação, pretendendo ingressar em um curso de pós-graduação na área de 
-                       Engenharia de software.
+                       Tenho como objetivo se tornar um Desenvolvedor Full Stack altamente profissional e qualificado. 
+                       Para atingir essa meta, estou estudando uma série de tecnologias que naturalmente compõem
+                       o currículu de um profissional atuante da área. Assim que terminar o curso de graduação, pretendendo 
+                       ingressar em um curso de pós-graduação na área de Engenharia de software, ou realizar cursos de 
+                       certificação profissional.
                         
                     </p>
                 </div>

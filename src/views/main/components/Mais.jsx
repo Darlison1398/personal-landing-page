@@ -19,8 +19,8 @@ function Mais () {
           scrollTrigger: {
               trigger: ".cards",
               //markers:true,
-              start: "top 900px",
-              end: "bottom 700px",
+              start: "top 600px",
+              end: "bottom 100%",
               scrub: true,
           }
       })

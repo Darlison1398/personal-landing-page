@@ -42,8 +42,7 @@ function Projetos() {
                     <h5>Drsilva clima-temp</h5>
                     <p>
                         Esse projeto é um sistema web onde é possível consultar o clima atual
-                        de uma determinada cidade. Ele é um projeto simples onde eu criei apenas
-                        para consumir um api e exibir os dados para o usuário. Nele, eu usei as
+                        de uma determinada cidade. Eu usei as
                         seguintes tecnologias: <span>Html5, Css3, Bootstrap e Javascript</span>
                     </p>
 

@@ -8,7 +8,7 @@ function Outros() {
     gsap.registerPlugin(ScrollTrigger);
     useLayoutEffect( () => {
         gsap.to(".ot", {
-            x:0,
+            y:0,
             opacity: 1, 
             scrollTrigger: {
                 trigger: ".ot",
