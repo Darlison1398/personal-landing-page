@@ -74,11 +74,15 @@ function Projetos() {
                 </div>
 
                 <div className="project">
-                    <h5>Drsilva page</h5>
+                    <h5>Drsilva Estudos</h5>
                     <p>
-                        Clique no botão abaixo para ver o escopo desse sistema no figma
+                        Página front-end desenvolvida apenas para fins de estudos. Nela, eu faço o 
+                        consumo de uma API RESTFUll. Entretanto, a API não está ospedada em um servidor e 
+                        por isso não vai ser possível ver o projeto em execução completa.
                     </p>
-                    <button id="btn-see">Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> </button>
+                    <button id="btn-see" onClick={() => redirectToProject(project.learn)}>
+                        Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> 
+                    </button>
                 </div>
 
             </section>

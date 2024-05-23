@@ -6,7 +6,7 @@ function Trajetoria() {
         <div className="container mt-4">
 
             <div className="box-start">
-                <h3 className="text-center">Início</h3>
+                <h3>Início</h3>
                 <div className="container mt-1 box-cont-text">
                     <p>
                         Ingressei no mundo da programação em novembro de 2021, quando dei os 
@@ -20,7 +20,7 @@ function Trajetoria() {
             </div>
 
             <div className="box-progress">
-                <h3 className="text-center">Em progresso...</h3>
+                <h3>Em progresso...</h3>
                 <div className="container mt-1 box-cont-text">
                     <p>
                        Atualmente, atuo como Programador de Sistemas em uma empresa de Automação Industrial, 
@@ -40,7 +40,7 @@ function Trajetoria() {
                 </div>
             </div>
             <div className="box-progress">
-                <h3 className="text-center">Objetivos</h3>
+                <h3>Objetivos</h3>
                 <div className="container box-cont-text">
                     <p>
                        Tenho como objetivo se tornar um Desenvolvedor Full Stack altamente profissional e qualificado. 
@@ -53,7 +53,7 @@ function Trajetoria() {
                 </div>
             </div>
             <div className="box-progress">
-                <h3 className="text-center">Interesses profissionais</h3>
+                <h3>Interesses profissionais</h3>
                 <div className="container box-cont-text">
                     <p>
                        Interesses profisisonais: Desenvolvimento web de modo geral, front-end, 

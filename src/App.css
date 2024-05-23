@@ -505,6 +505,21 @@ section{
     margin-left: 12px;
 }
 
+@media (min-width: 1300px) {
+    .project{
+        max-width: 250px;
+        max-height: 35vh;
+    }
+    
+
+    .ot {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+
+}
+
 @media (max-width: 1000px) {
     .box-text{
         width: 90%;
@@ -540,8 +555,7 @@ section{
     figure:hover figcaption {
         bottom: 0;
     }
-
-
+    
 }
 
 
@@ -584,8 +598,10 @@ section{
     .project {
         width: 100%;
         height: 35vh;
+        max-height: 35vh;
         margin-top: 1em;
     }
+
 
     figure img + figcaption {
         display: block;

@@ -12,9 +12,9 @@ function Outros() {
             opacity: 1, 
             scrollTrigger: {
                 trigger: ".ot",
-                //markers:true,
-                start: "top 600px",
-                end: "bottom 350px",
+                markers:false,
+                start: "top 800px",
+                end: "bottom 500px",
                 scrub: true,
             }
         })
