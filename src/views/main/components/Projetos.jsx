@@ -77,8 +77,8 @@ function Projetos() {
                     <h5>Drsilva Estudos</h5>
                     <p>
                         Página front-end desenvolvida apenas para fins de estudos. Nela, eu faço o 
-                        consumo de uma API RESTFUll. Entretanto, a API não está ospedada em um servidor e 
-                        por isso não vai ser possível ver o projeto em execução completa.
+                        consumo de uma API RESTFUll. Infelizmente, só vai ser possível ver a parte
+                        front-end.
                     </p>
                     <button id="btn-see" onClick={() => redirectToProject(project.learn)}>
                         Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> 

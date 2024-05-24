@@ -1,6 +1,6 @@
 function SoftSkills() {
     return (
-        <div className="container">
+        <div className="container mt-3">
             <div className="box-soft">
                 <h4>Soft-skills</h4>
                 <div className="box-elements">

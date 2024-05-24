@@ -11,6 +11,7 @@
     --cl-s: #8518F2;
     --cl-t: #68D7F5;
     --cl-q: #BB35F5;
+    --cl-qiu: #ef4fbf;
 }
 
 body {
@@ -164,7 +165,7 @@ figure {
   
 /* container apresentation */
 .box-text{
-    width: 600px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -570,7 +571,6 @@ section{
     }
 
     .box-soft{
-        margin-top: 3em;
         padding: 10px;
     }
 
