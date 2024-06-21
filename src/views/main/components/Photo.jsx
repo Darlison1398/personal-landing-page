@@ -8,7 +8,7 @@ function Photo() {
 
     const ft = {
         maxWidth: '100%',
-        maxHeight: '500px',
+        maxHeight: '530px',
         objectFit: 'cover',
         borderRadius: '10px'
     }
