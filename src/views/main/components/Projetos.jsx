@@ -42,8 +42,7 @@ function Projetos() {
                     <h5>Drsilva clima-temp</h5>
                     <p>
                         Esse projeto é um sistema web onde é possível consultar o clima atual
-                        de uma determinada cidade. Eu usei as
-                        seguintes tecnologias: <span>Html5, Css3, Bootstrap e Javascript</span>
+                        de uma determinada cidade.
                     </p>
 
                     <button id="btn-see" onClick={() => redirectToProject(project.clima_temp)}>
@@ -53,9 +52,8 @@ function Projetos() {
 
                 <div className="project">
                     <h5>Drsilva curriculu-web</h5>
-                    <p>Esse é um modelo de currículu web bem semelhante a esse  sistema. 
-                        No entanto, ele foi desenvolvido com as seguintes tecnologias:
-                        <span>Html5, Css, Javascript e Bootstrap</span>
+                    <p>Currículu profissional em formato web. 
+                        Ele tem um caráter mais voltado a mostrar meu lado profissional.
                     </p>
                     <button id="btn-see" onClick={() => redirectToProject(project.curriculu_web)}>
                         Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> 
@@ -65,8 +63,8 @@ function Projetos() {
                 <div className="project">
                     <h5>Drsilva Start</h5>
                     <p>
-                        Um simples site desenvolvido em Wordpress. Aqui, o foco principal que 
-                        resolvi demonstrar foi a minha habilidade com a escrita.
+                        Um simples site desenvolvido em Wordpress. Aqui, o foco principal  
+                        visa mostrar a minha habilidade com a escrita.
                     </p>
                     <button id="btn-see" onClick={() => redirectToProject(project.start)}>
                         Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> 
@@ -77,8 +75,7 @@ function Projetos() {
                     <h5>Drsilva Estudos</h5>
                     <p>
                         Página front-end desenvolvida apenas para fins de estudos. Nela, eu faço o 
-                        consumo de uma API RESTFUll. Infelizmente, só vai ser possível ver a parte
-                        front-end.
+                        consumo de uma API RESTFUll.
                     </p>
                     <button id="btn-see" onClick={() => redirectToProject(project.learn)}>
                         Ver projeto &nbsp;<FontAwesomeIcon icon={faArrowRight} /> 
